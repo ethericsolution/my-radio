@@ -5,10 +5,8 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="about us" description="about us">
   <section class="xl:pb-20 pb-8 md:pb-12 mt-8">
     <div class="container px-6 lg:flex lg:px-8">
-      <div
-        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:min-w-full lg:flex-none lg:gap-y-8"
-      >
-        <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
+      <div class="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2">
+        <div>
           <h2 class="text-base/7 font-semibold text-primary-600">about us</h2>
           <p
             class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
@@ -43,16 +41,12 @@ import Layout from "../layouts/Layout.astro";
             </figcaption>
           </figure>
         </div>
-        <div
-          class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents"
-        >
-          <div
-            class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end"
-          >
+        <div class="items-center">
+          <div class="w-full overflow-hidden aspect-auto">
             <img
               src="/images/about.jpg"
               alt="About"
-              class="w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
+              class="w-full rounded-2xl bg-gray-50 object-cover"
             />
           </div>
         </div>
